@@ -12,7 +12,7 @@ export function Hero() {
         className="w-full"
       >
         {/* Main Heading */}
-        <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter text-balance mb-8">
+        <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter text-balance mb-8" style={{ marginTop: '51px' }}>
           <span className="bg-gradient-to-b from-zinc-100 to-zinc-500 bg-clip-text text-transparent">
             Accelerated Operations. Intelligent Growth.
           </span>

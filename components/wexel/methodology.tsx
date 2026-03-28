@@ -41,7 +41,7 @@ export function Methodology() {
         </motion.div>
 
         {/* 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-zinc-800/50 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-zinc-800/50">
           {approaches.map((approach, index) => {
             const Icon = approach.icon
             return (

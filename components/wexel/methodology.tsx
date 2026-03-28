@@ -26,7 +26,7 @@ const approaches = [
 
 export function Methodology() {
   return (
-    <section className="py-32 px-6" id="methodology">
+    <section className="px-6" id="methodology" style={{ paddingTop: '33px', paddingBottom: '1px' }}>
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div

@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 export function Navigation() {
   return (
     <motion.header
-      className="fixed h-20 w-full z-50 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-800/50"
-      initial={{ y: -80 }}
-      animate={{ y: 0 }}
+      className="fixed top-6 left-1/2 -translate-x-1/2 z-50 h-16 px-8 rounded-full backdrop-blur-xl bg-zinc-950/60 border border-zinc-800/40 shadow-lg"
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="flex items-center justify-between h-full px-6 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between h-full gap-12">
         {/* Brand */}
-        <div className="text-2xl font-black tracking-tighter text-white">Wexel</div>
+        <div className="text-lg font-black tracking-tighter text-white whitespace-nowrap">Wexel</div>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-8 items-center">
@@ -28,8 +28,8 @@ export function Navigation() {
         </nav>
 
         {/* CTA Button */}
-        <button className="px-5 py-2 rounded-full bg-transparent border border-zinc-700 text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300">
-          Book an Efficiency Audit
+        <button className="px-5 py-2 rounded-full bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-500 transition-all duration-300 whitespace-nowrap">
+          Book Audit
         </button>
       </div>
     </motion.header>

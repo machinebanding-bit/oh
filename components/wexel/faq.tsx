@@ -61,15 +61,26 @@ export function FAQ() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          className="w-full max-w-2xl mx-auto"
         >
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            {faqs.map((faq) => (
-              <motion.div key={faq.id} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-                <AccordionItem value={faq.id} className="border-b border-zinc-800 px-0">
-                  <AccordionTrigger className="py-6 text-left text-lg font-medium text-zinc-200 hover:text-white hover:no-underline transition-colors duration-300">
+          <Accordion type="single" collapsible className="w-full space-y-3 flex flex-col">
+            {faqs.map((faq, index) => (
+              <motion.div 
+                key={faq.id} 
+                initial={{ opacity: 0, y: 10 }} 
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                viewport={{ once: true }}
+                className="w-full"
+              >
+                <AccordionItem 
+                  value={faq.id} 
+                  className="border border-zinc-800/40 rounded-lg px-6 py-0 bg-zinc-900/30 hover:bg-zinc-900/50 transition-colors duration-300 data-[state=open]:bg-zinc-900/60"
+                >
+                  <AccordionTrigger className="py-5 text-left text-base font-semibold text-zinc-100 hover:text-white hover:no-underline transition-colors duration-300">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="pb-6 text-zinc-400 leading-relaxed text-base">
+                  <AccordionContent className="pb-5 pt-2 text-zinc-400 leading-relaxed text-sm border-t border-zinc-800/20">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

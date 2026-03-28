@@ -16,7 +16,7 @@ export function Navigation() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-8 items-center">
-          {['Workstreams', 'Methodology', 'Security', 'FAQ'].map((item) => (
+          {['Methodology', 'Methodology', 'Security', 'FAQ'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}

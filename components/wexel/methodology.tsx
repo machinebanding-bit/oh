@@ -12,7 +12,7 @@ const approaches = [
   },
   {
     icon: Layers,
-    title: 'Architectural Integrity',
+    title: 'Innovation-Driven',
     description:
       'From initial diagnostic strategy through to final deployment. We handle the full build, integration, and security protocols. No handoffs. No operational gaps.',
   },

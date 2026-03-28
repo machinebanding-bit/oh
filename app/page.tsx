@@ -1,6 +1,6 @@
 import { Navigation } from '@/components/wexel/navigation'
 import { Hero } from '@/components/wexel/hero'
-import { DomainTrustBar } from '@/components/wexel/domain-trust-bar'
+import { Marquee } from '@/components/ui/marquee'
 import { Methodology } from '@/components/wexel/methodology'
 import { Capabilities } from '@/components/wexel/capabilities'
 import { FAQ } from '@/components/wexel/faq'
@@ -17,7 +17,15 @@ export default function Home() {
     <main className="bg-zinc-950 text-white overflow-x-hidden">
       <Navigation />
       <Hero />
-      <DomainTrustBar />
+      <div className="py-12 border-y border-zinc-800">
+        <Marquee duration={30} pauseOnHover>
+          <span className="mx-8 text-2xl font-medium">React</span>
+          <span className="mx-8 text-2xl font-medium">Next.js</span>
+          <span className="mx-8 text-2xl font-medium">Tailwind</span>
+          <span className="mx-8 text-2xl font-medium">TypeScript</span>
+          <span className="mx-8 text-2xl font-medium">Supabase</span>
+        </Marquee>
+      </div>
       <Methodology />
       <Capabilities />
       <FAQ />

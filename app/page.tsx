@@ -19,11 +19,11 @@ export default function Home() {
       <Hero />
       <div className="py-12 border-y border-zinc-800">
         <Marquee duration={30} pauseOnHover>
-          <span className="mx-8 text-2xl font-medium">React</span>
-          <span className="mx-8 text-2xl font-medium">Next.js</span>
-          <span className="mx-8 text-2xl font-medium">Tailwind</span>
-          <span className="mx-8 text-2xl font-medium">TypeScript</span>
-          <span className="mx-8 text-2xl font-medium">Supabase</span>
+          <span className="mx-8 text-2xl font-medium">PRIVATE EQUITY</span>
+          <span className="mx-8 text-2xl font-medium">LEGAL INFRASTRUCTURE</span>
+          <span className="mx-8 text-2xl font-medium">REAL ESTATE ENTERPRISE</span>
+          <span className="mx-8 text-2xl font-medium">FINTECH ARCHITECTURE</span>
+          <span className="mx-8 text-2xl font-medium">LUXURY E-COMMERCE</span>
         </Marquee>
       </div>
       <Methodology />

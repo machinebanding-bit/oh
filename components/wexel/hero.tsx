@@ -1,11 +1,15 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import InteractiveNeuralVortex from '@/components/ui/interactive-neural-vortex-background'
 
 export function Hero() {
   return (
-    <section className="py-32 px-6 flex flex-col items-center justify-center text-center min-h-screen pt-20">
-      <motion.div
+    <section className="relative py-32 px-6 flex flex-col items-center justify-center text-center min-h-screen pt-20 overflow-hidden">
+      {/* Neural Vortex Background */}
+      <InteractiveNeuralVortex />
+      
+      <motion.div className="relative z-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}

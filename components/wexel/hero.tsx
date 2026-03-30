@@ -9,11 +9,11 @@ export function Hero() {
       {/* Neural Vortex Background */}
       <InteractiveNeuralVortex />
       
-      <motion.div className="relative z-10"
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="w-full"
+        className="relative z-10 w-full"
       >
         {/* Main Heading */}
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter text-balance mb-8" style={{ marginTop: '51px' }}>

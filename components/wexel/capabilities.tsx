@@ -173,7 +173,7 @@ function CapabilityCard({ card }: { card: CapabilityCard }) {
 
 export function Capabilities() {
   return (
-    <section className="py-32 px-6">
+    <section className="py-32 px-6" id="workstreams">
       <div className="max-w-7xl mx-auto">
         {/* First Section Header */}
         <motion.div

@@ -28,13 +28,14 @@ export function Hero() {
         </p>
 
         {/* Primary Button */}
-        <motion.button
-          className="px-10 py-5 bg-indigo-600 text-white font-semibold rounded-full shadow-[0_0_20px_rgba(79,70,229,0.4)] hover:shadow-[0_0_30px_rgba(79,70,229,0.6)] transition-shadow duration-300"
+        <motion.a
+          href="#booking"
+          className="inline-block px-10 py-5 bg-indigo-600 text-white font-semibold rounded-full shadow-[0_0_20px_rgba(79,70,229,0.4)] hover:shadow-[0_0_30px_rgba(79,70,229,0.6)] transition-shadow duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           Book Your Efficiency Audit
-        </motion.button>
+        </motion.a>
       </motion.div>
     </section>
   )

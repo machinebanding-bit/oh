@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Linkedin, Check } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 
 export function Footer() {
   return (

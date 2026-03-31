@@ -7,8 +7,6 @@ import { Menu, X } from 'lucide-react'
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const navItems = ['Methodology', 'Workstreams', 'Security', 'FAQ']
-
   return (
     <>
       <motion.header
@@ -23,7 +21,7 @@ export function Navigation() {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-8 items-center">
-            {navItems.map((item, idx) => (
+            {['Methodology', 'Workstreams', 'FAQ'].map((item, idx) => (
               <a
                 key={`nav-${idx}`}
                 href={`#${item.toLowerCase()}`}
@@ -98,7 +96,7 @@ export function Navigation() {
               transition={{ duration: 0.3 }}
             >
               <nav className="flex flex-col divide-y divide-zinc-800/40">
-                {navItems.map((item, idx) => (
+                {['Methodology', 'Workstreams', 'FAQ'].map((item, idx) => (
                   <a
                     key={`mobile-nav-${idx}`}
                     href={`#${item.toLowerCase()}`}

@@ -27,7 +27,7 @@ export function Footer() {
             </a>
           </motion.div>
 
-          {/* Column 2: Capabilities (Span 3) */}
+          {/* Column 2: Navigation Links (Span 3) */}
           <motion.div
             className="md:col-span-3"
             initial={{ opacity: 0, y: 20 }}
@@ -35,22 +35,20 @@ export function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 mb-6">Workstreams</h4>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 mb-6">Navigate</h4>
             <ul className="flex flex-col gap-3">
               {[
-                'Intelligent AI CRM',
-                'AI Voice Solutions',
-                'Mass Outreach',
-                'E-Commerce Intel',
-                'Brand Presence',
-                'Next-Gen Web',
+                { label: 'Methodology', href: '#methodology' },
+                { label: 'Workstreams', href: '#workstreams' },
+                { label: 'Testimonials', href: '#testimonials' },
+                { label: 'FAQ', href: '#faq' },
               ].map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-sm text-zinc-500 hover:text-zinc-200 transition-colors duration-300"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}

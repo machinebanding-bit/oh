@@ -35,9 +35,12 @@ export function Navigation() {
           </nav>
 
           {/* Desktop CTA Button */}
-          <button className="hidden md:block px-5 py-2 rounded-full bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-500 transition-all duration-300 whitespace-nowrap">
+          <a
+            href="#booking"
+            className="hidden md:block px-5 py-2 rounded-full bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-500 transition-all duration-300 whitespace-nowrap"
+          >
             Book Audit
-          </button>
+          </a>
 
           {/* Mobile Hamburger Menu */}
           <button
@@ -107,9 +110,13 @@ export function Navigation() {
                 ))}
 
                 {/* Mobile CTA Button */}
-                <button className="w-full px-6 py-4 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 transition-colors duration-300">
+                <a
+                  href="#booking"
+                  onClick={() => setIsOpen(false)}
+                  className="block w-full px-6 py-4 text-sm font-medium text-white text-center bg-indigo-600 hover:bg-indigo-500 transition-colors duration-300"
+                >
                   Book Audit
-                </button>
+                </a>
               </nav>
             </motion.div>
           </>

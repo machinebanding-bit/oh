@@ -3,7 +3,10 @@ import { Hero } from '@/components/wexel/hero'
 import { Marquee } from '@/components/ui/marquee'
 import { Methodology } from '@/components/wexel/methodology'
 import { Capabilities } from '@/components/wexel/capabilities'
+import { Testimonials } from '@/components/wexel/testimonials'
+import { CaseStudies } from '@/components/wexel/case-studies'
 import { FAQ } from '@/components/wexel/faq'
+import { BookingForm } from '@/components/wexel/booking-form'
 import { Footer } from '@/components/wexel/footer'
 
 export const metadata = {
@@ -28,7 +31,10 @@ export default function Home() {
       </div>
       <Methodology />
       <Capabilities />
+      <Testimonials />
+      <CaseStudies />
       <FAQ />
+      <BookingForm />
       <Footer />
     </main>
   )

@@ -7,8 +7,6 @@ import { Menu, X } from 'lucide-react'
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const navItems = ['Methodology', 'Workstreams', 'FAQ', 'FAQ']
-
   return (
     <>
       <motion.header

@@ -132,7 +132,7 @@ function TestimonialCard({ testimonial, index }: { testimonial: Testimonial; ind
 
 export function Testimonials() {
   return (
-    <section className="py-32 px-6" id="testimonials">
+    <section className="py-32 px-6" id="testimonials" style={{ background: 'linear-gradient(180deg, rgba(16, 185, 129, 0.12) 0%, rgba(79, 70, 229, 0.04) 100%)' }}>
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div

@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Orbitron } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from '@/components/ui/sonner'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _orbitron = Orbitron({ subsets: ["latin"], variable: '--font-blanka' });
 
 export const metadata: Metadata = {
   title: 'v0 App',
@@ -36,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" style={_orbitron.style}>
       <body className="font-sans antialiased">
         {children}
         <Toaster position="top-center" richColors />

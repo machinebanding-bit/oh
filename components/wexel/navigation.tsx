@@ -28,7 +28,7 @@ export function Navigation() {
       >
         <div className="flex items-center justify-between h-full gap-12">
           {/* Brand */}
-          <div style={{ fontFamily: 'var(--font-blanka, "Orbitron", sans-serif)' }} className="text-xl font-black tracking-tighter text-white whitespace-nowrap">Wexel</div>
+          <div className="text-lg font-black tracking-tighter text-white whitespace-nowrap">Wexel</div>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-8 items-center">

@@ -26,7 +26,7 @@ const approaches = [
 
 export function Methodology() {
   return (
-    <section className="px-6" id="methodology" style={{ paddingTop: '128px', paddingBottom: '1px', background: 'radial-gradient(circle at 20% 0%, rgba(79, 70, 229, 0.12) 0%, transparent 60%)' }}>
+    <section className="px-6" id="methodology" style={{ paddingTop: '128px', paddingBottom: '1px' }}>
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div

@@ -182,7 +182,7 @@ function CaseStudyCard({ study, index }: { study: CaseStudy; index: number }) {
 
 export function CaseStudies() {
   return (
-    <section className="py-32 px-6">
+    <section className="pt-32 pb-6 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div

@@ -1,11 +1,22 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isOpen) {
+        setIsOpen(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [isOpen])
 
   return (
     <>
@@ -89,7 +100,7 @@ export function Navigation() {
 
             {/* Mobile Menu Drawer */}
             <motion.div
-              className="fixed top-24 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-24px)] rounded-3xl backdrop-blur-xl bg-zinc-900/95 border border-zinc-800/60 shadow-xl overflow-hidden"
+              className="fixed top-24 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-24px)] rounded-3xl backdrop-blur-xl bg-zinc-950/60 border border-zinc-800/40 shadow-xl overflow-hidden"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}

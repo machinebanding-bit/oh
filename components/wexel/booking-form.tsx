@@ -121,11 +121,7 @@ export function BookingForm() {
     <section id="booking" className="py-32 px-6">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-16"
         >
           <p className="text-indigo-500 font-bold tracking-[0.2em] text-xs mb-4">
@@ -137,15 +133,11 @@ export function BookingForm() {
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             A 30-minute diagnostic call where we identify your highest-impact automation opportunities. No commitment, just clarity.
           </p>
-        </motion.div>
+        </div>
 
         {/* Form Card */}
-        <motion.div
+        <div
           className="rounded-[2.5rem] p-8 md:p-12 bg-zinc-900/40 border border-zinc-800 backdrop-blur-md"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          viewport={{ once: true }}
         >
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -337,7 +329,7 @@ export function BookingForm() {
               </div>
             </form>
           </Form>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

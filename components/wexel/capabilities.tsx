@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Database, PhoneIncoming, Send, ShoppingBag, Monitor, TrendingUp } from 'lucide-react'
+import { Database, PhoneCall, Send, ShoppingBag, Share2, Globe } from 'lucide-react'
 
 interface CapabilityCard {
   icon: React.ReactNode
@@ -32,7 +32,7 @@ const firstRow: CapabilityCard[] = [
     },
   },
   {
-    icon: <PhoneIncoming size={28} className="text-indigo-400 mb-6" />,
+    icon: <PhoneCall size={28} className="text-indigo-400 mb-6" />,
     title: 'AI Voice Solutions',
     description:
       'Human-scale voice agents that qualify leads and book appointments 24/7. Indistinguishable from your elite team, ensuring you never miss a high-value conversation.',
@@ -63,14 +63,14 @@ const secondRow: CapabilityCard[] = [
     },
   },
   {
-    icon: <Monitor size={28} className="text-indigo-400 mb-6" />,
+    icon: <Share2 size={28} className="text-indigo-400 mb-6" />,
     title: 'Autonomous Brand Presence',
     description:
       'The 24/7 Authority. AI that orchestrates your brand sentiment and community engagement across all platforms. Stay active and authoritative without manual posting.',
     visualization: 'sentiment',
   },
   {
-    icon: <Monitor size={28} className="text-indigo-400 mb-6" />,
+    icon: <Globe size={28} className="text-indigo-400 mb-6" />,
     title: 'Next-Gen Web Experiences',
     description:
       'The Foundation of Conversion. Websites that rank, load, and convert. No bloated templates. Just clean code, strategic design, and SEO built into the bedrock.',
